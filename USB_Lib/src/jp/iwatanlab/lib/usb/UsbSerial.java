@@ -2,7 +2,7 @@
  * 
  */
 
-package jp.iwatan.lib.usb;
+package jp.iwatanlab.lib.usb;
 
 import java.io.IOException;
 import java.io.InputStream;
