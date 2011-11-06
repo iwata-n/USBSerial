@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">USB_Lib_sample2</string>
+    <string name="send">Send</string>
+    <string name="auto_scroll">AutoScroll</string>
+
+</resources>
