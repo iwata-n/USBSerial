@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radio_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/band_a" />
+
+            <RadioButton
+                android:id="@+id/radio_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/band_b" />
+
+            <RadioButton
+                android:id="@+id/radio_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/band_c" />
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/tgl_turbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="ToggleButton"
+            android:textOff="ターボOFF"
+            android:textOn="ターボON" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_centerInParent="true"            
+            android:tag="0"
+            android:text="@string/stop" />
+
+        <Button
+            android:id="@+id/btn_right_back"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_below="@+id/btn_stop"
+            android:layout_toRightOf="@+id/btn_stop"
+            android:tag="4"
+            android:text="@string/right_back" />
+
+        <Button
+            android:id="@+id/btn_forward"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_above="@+id/btn_stop"
+            android:layout_alignLeft="@+id/btn_stop"
+            android:tag="1"
+            android:text="@string/forward" />
+
+        <Button
+            android:id="@+id/btn_left_forward"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_above="@+id/btn_stop"
+            android:layout_toLeftOf="@+id/btn_stop"
+            android:tag="8"
+            android:text="@string/left_forward" />
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_below="@+id/btn_forward"
+            android:layout_toLeftOf="@+id/btn_stop"
+            android:tag="7"
+            android:text="@string/left" />
+
+        <Button
+            android:id="@+id/btn_left_back"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_below="@+id/btn_stop"
+            android:layout_toLeftOf="@+id/btn_stop"
+            android:tag="6"
+            android:text="@string/left_back" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_below="@+id/btn_stop"
+            android:layout_toLeftOf="@+id/btn_right_back"
+            android:tag="5"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignLeft="@+id/btn_right_back"
+            android:layout_below="@+id/btn_forward"
+            android:tag="3"
+            android:text="@string/right" />
+
+        <Button
+            android:id="@+id/btn_right_forward"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_above="@+id/btn_right"
+            android:layout_alignLeft="@+id/btn_right"
+            android:tag="2"
+            android:text="@string/right_forward" />
+
+    </RelativeLayout>
+
+</LinearLayout>
