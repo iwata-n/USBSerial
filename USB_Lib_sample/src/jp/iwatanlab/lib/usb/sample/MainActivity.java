@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
-import jp.iwatan.lib.usb.UsbSerial;
-import jp.iwatan.lib.usb.UsbSerialManager;
+import jp.iwatanlab.lib.usb.UsbSerial;
+import jp.iwatanlab.lib.usb.UsbSerialManager;
 import android.app.Activity;
 import android.hardware.usb.UsbDevice;
 import android.os.Bundle;
